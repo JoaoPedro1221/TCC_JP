@@ -480,7 +480,7 @@ defineExpose({ validate })
 
 .personal-form__combo {
   display: grid;
-  grid-template-columns: 4.125rem minmax(0, 1fr);
+  grid-template-columns: 5.755rem minmax(0, 1fr);
 }
 
 .personal-form__hint,
@@ -544,6 +544,9 @@ defineExpose({ validate })
 :deep(.personal-form__city .p-inputtext::placeholder),
 :deep(.p-select-label.p-placeholder) {
   color: #858585;
+}
+:deep(.personal-form__select--small .p-select-label.p-placeholder) {
+  font-size: 0.7rem;
 }
 
 :deep(.personal-form__select) {
