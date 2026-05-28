@@ -36,3 +36,64 @@ O arquivo [server.json](src/assets/js/server.json) contém uma base fake compat�
 
 Aplicação web em Vue 3 para inscrição de participantes no evento Conexão Carreira, visualização de indicadores em dashboard e administração/exportação das inscrições por rota/evento.
 
+## Stack Técnica
+
+- Vue `3.3.4`
+- Vite `4.4.5`
+- Vue Router `4.1.6`
+- Pinia `3.0.1`
+- PrimeVue `4.5.5`
+- PrimeIcons `7.0.0`
+- Aura theme de `@primeuix/themes`
+- Axios `1.3.5`
+- Chart.js `4.4.0`
+- Maska `2.1.11`
+- XLSX `0.18.5`
+- Sass e Tailwind CSS
+
+## Estrutura Principal
+
+```text
+src/
+  assets/
+    base.css
+    img/
+    js/
+      server.json
+      brazil_geo.json
+      states-name-to-abbreviation.js
+  components/
+    commom/
+      MessageAlert.vue
+    conexao-carreira/
+      FormPanel.vue
+      form-steps/
+        PersonalInformation.vue
+        AcademicInformation.vue
+        TalentBank.vue
+        Sales.vue
+        data-field/
+          Courses.js
+          RegistrationFields.js
+          University.js
+    dashboard/
+      DashboardHeader.vue
+      DataBox.vue
+      DistribuicaoEstado.vue
+      TopCursos.vue
+      DataFormatura.vue
+      DataTable.vue
+  router/
+    index.js
+  stores/
+    conexao.js
+    dashboard.js
+    error.js
+  views/
+    ConexaoCarreira.vue
+    DashboardView.vue
+    AdminView.vue
+  App.vue
+  main.js
+```
+
